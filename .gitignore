@@ -1,0 +1,17 @@
+.ipynb_checkpoints
+__pycache__
+.vscode
+model/saved_models/*
+!model/saved_models/.gitkeep
+model/saved_embeddings/*
+!model/saved_embeddings/.gitkeep
+model/saved_vectorizers/*
+!model/saved_vectorizers/.gitkeep
+notebooks
+results/*
+!results/.gitkeep
+.DS_Store
+data/glove/glove.6B.50d.txt
+data/glove/glove.6B.100d.txt
+data/clean_News_Category_Dataset_v2.csv
+data/News_Category_Dataset_v2.json

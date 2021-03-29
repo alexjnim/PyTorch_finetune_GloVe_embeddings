@@ -1,0 +1,1 @@
+Please download from the stanford website: http://nlp.stanford.edu/data/glove.6B.zip.  Then, unzip and put the 50d or 100d version into this subfolder so that it matches the filepath in the config file.
