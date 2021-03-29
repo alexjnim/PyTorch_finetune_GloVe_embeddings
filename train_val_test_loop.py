@@ -89,7 +89,7 @@ def train_val_test_model(model, dataset, device,  optimizer, loss_func):
         model.eval()
         print('test')
         for batch_index, batch_dict in enumerate(batch_generator):
-            print('testing')
+            print('testing test batches')
             # compute the output
             y_pred =  model(batch_dict['x_data'])
 
