@@ -7,7 +7,7 @@ unk_words_cutoff = 25
 
 save_model_directory = 'model/saved_models/'
 model_filename = 'embedding_model_'
-save_embeddings_directory = 'model/save_embeddings/'
+save_embeddings_directory = 'model/saved_embeddings/'
 embeddings_filename = 'embeddings_'
 vectorizer_directory = 'model/saved_vectorizers/'
 vectorizer_filename = 'vectorizer.json'

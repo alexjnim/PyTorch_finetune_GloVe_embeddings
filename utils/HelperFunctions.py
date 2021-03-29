@@ -71,7 +71,7 @@ def save_embeddings(model, train_state, words):
     model.load_state_dict(torch.load(config.save_model_directory+config.model_filename+str(train_state['best_epoch_index'])))
     embeddings = model.embedding.weight.data
     # save embeddings as .txt, just like GloVe embeddings
-    with open(config.save_embeddings_directory + config.embeddings_filename +str(embeddings.shape[1])+"d_"+str(train_state['best_epoch_index']) + 'epoch.txt', 'w') as f:
+    with open(config.save_embeddings_directory + config.embeddings_filename +str(embeddings.shape[1])+"d_"+str(train_state['best_epoch_index']) + 'epochs.txt', 'w') as f:
         for i in range(embeddings.shape[0]):
             f.write("%s" % words[i])
             for j in range(embeddings.shape[1]):
