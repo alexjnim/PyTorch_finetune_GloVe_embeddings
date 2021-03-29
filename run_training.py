@@ -72,7 +72,7 @@ optimizer = optim.Adam(classifier.parameters(), lr=config.learning_rate)
 train_state, classifier = train_val_test_model(classifier, dataset, device, optimizer, loss_func)
 print(train_state)
 # now that training is over, save the embeddings
-save_embeddings(classifier, train_state, words)
+save_embeddings(classifier, train_state, list(words))
 
 
 

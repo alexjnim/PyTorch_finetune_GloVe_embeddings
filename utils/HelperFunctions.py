@@ -56,8 +56,9 @@ def update_train_state(model, train_state):
 
         # Stop early ? if early_stopping step >= early_stopping_criteria, this is True and will stop loop
         train_state['stop_early'] = train_state['early_stopping_step'] >= config.early_stopping_criteria
-        with open('results/training_results.json', 'w') as fp:
-            json.dump(train_state, fp)
+    #save training results after each epoch
+    with open('results/training_results.json', 'w') as fp:
+        json.dump(train_state, fp)
 
     return train_state
 
