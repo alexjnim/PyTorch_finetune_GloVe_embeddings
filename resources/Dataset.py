@@ -96,6 +96,10 @@ def generate_batches(dataset, batch_size, shuffle=True,
     """
     A generator function which wraps the PyTorch DataLoader. It will
       ensure each tensor is on the write device location.
+    
+    https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
+    Generators are iterators, a kind of iterable you can only iterate over once. Generators do not store all the values in memory, they generate the values on the fly.
+    yield is a keyword that is used like return, except the function will return a generator.
     """
     dataloader = DataLoader(dataset=dataset, batch_size=batch_size,
                             shuffle=shuffle, drop_last=drop_last)
