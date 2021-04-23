@@ -100,6 +100,9 @@ def generate_batches(dataset, batch_size, shuffle=True,
     https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
     Generators are iterators, a kind of iterable you can only iterate over once. Generators do not store all the values in memory, they generate the values on the fly.
     yield is a keyword that is used like return, except the function will return a generator.
+    This is very useful when your function will return a huge set of values that you will only need to read once.
+    We should use yield when we want to iterate over a sequence, but don’t want to store the entire sequence in memory.
+    If the body of a def contains yield, the function automatically becomes a generator function.
     """
     dataloader = DataLoader(dataset=dataset, batch_size=batch_size,
                             shuffle=shuffle, drop_last=drop_last)
